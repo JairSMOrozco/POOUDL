@@ -10,7 +10,7 @@ public class DataInput {
         int i;
 
         for(i = 0; i < 3; i++){
-            System.out.println("Ingresa el número " + (i + 1));
+            System.out.println("Ingresa el número " + (i + 1) + " de 3");
             numbers[i] = readNumber.nextInt();
         }
 
