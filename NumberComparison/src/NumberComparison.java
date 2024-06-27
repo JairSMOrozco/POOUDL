@@ -5,7 +5,7 @@ public class NumberComparison {
         boolean areRepeat = true;
         int[] comparisonResult = new int[3];
 
-        //Instancias
+        //Instancias de las clases
         DataInput capture = new DataInput();
         Validation validation = new Validation();
         Comparison orderedNumbers = new Comparison();

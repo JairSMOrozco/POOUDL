@@ -4,10 +4,10 @@ public class Captura {
     private int year;
 
     //Métodos
-    public static int pedirDato(){
+    public int pedirDato(){
         Scanner readYear = new Scanner(System.in);
         System.out.println("Teclea un año en 4 dígitos");
-        year = leerDato.nextInt();
+        year = readYear.nextInt();
 
         return year;
     }
