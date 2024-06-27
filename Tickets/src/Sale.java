@@ -1,0 +1,77 @@
+public class Sale {
+    //Atributos
+    private String selectedState;
+    private String distanceAndPrice;
+
+    //Métodos
+    public String totalCost(char state, int tickets){
+        selectedState = stateAssign(state);
+
+        //Intancias de State
+        State puebla = new State();
+        State veracruz = new State();
+        State tlaxcala = new State();
+        State cuernavaca = new State();
+        State queretaro = new State();
+
+        switch (selectedState){
+            case "Puebla":
+                puebla.name = selectedState;
+                puebla.ticketPrice = 150.00;
+                puebla.timeTravel = 2;
+                distanceAndPrice = puebla.calculateInfoTravel(tickets);
+                break;
+            case "Veracruz":
+                veracruz.name = selectedState;
+                veracruz.ticketPrice = 320.00;
+                veracruz.timeTravel = 6.5;
+                distanceAndPrice = veracruz.calculateInfoTravel(tickets);
+                break;
+            case "Tlaxcala":
+                tlaxcala.name = selectedState;
+                tlaxcala.ticketPrice = 120.00;
+                tlaxcala.timeTravel = 2;
+                distanceAndPrice = tlaxcala.calculateInfoTravel(tickets);
+                break;
+            case "Cuernavaca":
+                cuernavaca.name = selectedState;
+                cuernavaca.ticketPrice = 90.00;
+                cuernavaca.timeTravel = 2;
+                distanceAndPrice = cuernavaca.calculateInfoTravel(tickets);
+                break;
+            case "Queretaro":
+                queretaro.name = selectedState;
+                queretaro.ticketPrice = 110.00;
+                queretaro.timeTravel = 3;
+                distanceAndPrice = queretaro.calculateInfoTravel(tickets);
+                break;
+        }
+
+        return distanceAndPrice;
+    }
+
+    private String stateAssign(char state){
+
+        String selectedState = "";
+
+        switch (state){
+            case 'a': selectedState = "Puebla";
+                break;
+            case 'b': selectedState = "Veracruz";
+                break;
+            case 'c': selectedState = "Tlaxcala";
+                break;
+            case 'd': selectedState = "Cuernavaca";
+                break;
+            case 'e': selectedState = "Queretaro";
+                break;
+            default:
+                break;
+        }
+
+        return selectedState;
+
+    }
+
+
+}
