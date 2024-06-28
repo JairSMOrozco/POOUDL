@@ -1,6 +1,10 @@
 public class MuestraSalida {
 
     //Métodos
+    /**Descripción de la función
+     * Muestra en consola el resultado de si el año es bisiesto o no
+     * @param yearValue --> Año capturado por usuario
+     * */
     public static void showResult(boolean yearValue){
         if(yearValue == true){
             System.out.println("El año SI es bisiesto");

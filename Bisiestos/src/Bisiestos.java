@@ -11,18 +11,20 @@ public class Bisiestos {
         Determinacion isBiDetermination = new Determinacion();
         MuestraSalida result = new MuestraSalida();
 
+        //Captura de año
         year = yearCapture.pedirDato();
 
+        //Validación de año
         if(validationYear.validationData(year) == true){
             System.out.println("Año dentro de rango, procediendo a determinación de bisiesto");
             yearValue = isBiDetermination.calculateBi(year);
 
+            //Muestra de resultado
             result.showResult(yearValue);
 
         }else{
             System.out.println("Error, dato fuera de rango");
         }
-
 
     }
 }
