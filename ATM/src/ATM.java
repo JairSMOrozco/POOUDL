@@ -9,7 +9,6 @@ public class ATM {
         double moneyWithdraw;
         double moneyAfterWithdraw;
 
-
         //Instancias
         Menu menu = new Menu();
         Data captureData = new Data();
@@ -21,13 +20,18 @@ public class ATM {
         while (true){
 
             do {
+                //Muestra menu
                 menu.showMenu();
+
+                //Almacena la opción elegida por el usuario
                 selectedOption = captureData.getOption();
 
+                //Verifica que la opción elegida sea válida para continuar con el programa
                 isOptionCorrect = verificationData.verifyOption(selectedOption);
 
             }while(!isOptionCorrect);
 
+            //Dependiendo de la opción elegida se ejecutan los cálculos
             switch (selectedOption){
                 case 1:
                     moneyDeposit = captureData.getMoneyDeposit();
@@ -54,8 +58,6 @@ public class ATM {
                     System.out.println("Saliendo del programa...");
                     System.exit(0);
             }
-
         }
-
     }
 }

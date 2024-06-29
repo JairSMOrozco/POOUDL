@@ -1,7 +1,10 @@
 public class Verification {
-    //
-
     //Métodos
+    /**Descripción de la función
+     * Verifica que la opción elegida por usuario sea válida y pueda seguir con el programa
+     * @param figure --> Es la opción elegida por usuario desde el menú principal
+     * @return isOptionAreaCorrect --> Es un boolean que indica si la opción es válida o no
+     * */
     public boolean verifyOptionArea(char figure){
         boolean isOptionAreaCorrect;
 

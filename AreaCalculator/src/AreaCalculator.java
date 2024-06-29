@@ -20,14 +20,18 @@ public class AreaCalculator {
         while (true){
 
             do {
-
+                //Muestra menú en consola
                 menu.showMenu();
+
+                //Almacena la opción elegida por usuario
                 selectedFigure = captureData.getFigure();
 
+                //Verifica si la opción elegida es correcta
                 isFigureOptionCorrect = verificationData.verifyOptionArea(selectedFigure);
 
             }while(!isFigureOptionCorrect);
 
+            //Dependiendo de la opción elegida se ejecutan los cálculos
             switch (selectedFigure){
                 case 'a':
                     rectangle.base = captureData.getRectangleBase();

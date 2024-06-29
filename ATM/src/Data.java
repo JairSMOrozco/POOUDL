@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class Data {
 
+    /**Descripción de la función
+     * Pide a usuario ingresar una opción del menú
+     * @return selectedOption --> Es la opción ingresada por usuario
+     * */
     public int getOption(){
         Scanner readOption = new Scanner(System.in);
 
@@ -10,6 +14,11 @@ public class Data {
         return selectedOption;
     }
 
+    /**Descripcion de la función
+     * Pide el monto que se depositará a la cuenta de usuario. Pasa por una verificación para que el monto no sea 0 o menor a 0
+     * y que solo se puede ingresar montos que cumplan con ser múltiplos de 100
+     * @return depositeMoney --> Es el monto a depositar en la cuenta
+     * */
     public double getMoneyDeposit(){
         double depositedMoney;
         boolean isAmountCorrect;
@@ -32,6 +41,11 @@ public class Data {
         return depositedMoney;
     }
 
+    /**Descripcion de la función
+     * Pide el monto que se retirará de la cuenta de usuario. Pasa por una verificación para que el monto no sea 0 o menor a 0
+     * y que solo se puede retirar montos que cumplan con ser múltiplos de 100
+     * @return moneyWithdraw --> Es el monto a retirar de la cuenta
+     * */
     public double getMoneyWithdraw(){
         double moneyWithdraw;
         boolean isAmountCorrect;
@@ -53,7 +67,5 @@ public class Data {
 
         return moneyWithdraw;
     }
-
-
 
 }

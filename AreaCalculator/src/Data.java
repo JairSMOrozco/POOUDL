@@ -2,6 +2,12 @@ import java.util.Scanner;
 
 public class Data {
 
+    //Métodos
+
+    /**Descripción de la función
+     * Pide a usuario ingresar una opción del menú
+     * @return selectedFigure --> Es la opción ingresada por usuario
+     * */
     public char getFigure(){
         Scanner readFigure = new Scanner(System.in);
 
@@ -10,7 +16,13 @@ public class Data {
         return selectedFigure;
     }
 
+
     //Base del rectángulo
+    /**Descripción de la función
+     * Pide a usuario ingresar la medida de la base del rectángulo.
+     * Tiene una verificación para saber que el valor ingresado no puede ser 0 o menos
+     * @return base --> Es el valor que tomará la base del rectángulo
+     * */
     public double getRectangleBase(){
         double base;
         boolean isRectangleBaseCorrect;
@@ -33,6 +45,11 @@ public class Data {
     }
 
     //Altura del rectángulo
+    /**Descripción de la función
+     * Pide a usuario ingresar la medida de la altura del rectángulo.
+     * Tiene una verificación para saber que el valor ingresado no puede ser 0 o menos
+     * @return height --> Es el valor que tomará la altura del rectángulo
+     * */
     public double getRectangleHeight(){
         double height;
         boolean isRectangleHeightCorrect;
@@ -57,6 +74,11 @@ public class Data {
     }
 
     //Radio del círculo
+    /**Descripción de la función
+     * Pide a usuario ingresar la medida del radio del círculo.
+     * Tiene una verificación para saber que el valor ingresado no puede ser 0 o menos
+     * @return radio --> Es el valor que tomará el radio del círculo
+     * */
     public double getCircleRadio(){
         double radio;
         boolean isCircleRadioCorrect;
@@ -81,6 +103,11 @@ public class Data {
     }
 
     //Lado del pentágono
+    /**Descripción de la función
+     * Pide a usuario ingresar la medida del lado del pentágono.
+     * Tiene una verificación para saber que el valor ingresado no puede ser 0 o menos
+     * @return side --> Es el valor que tomará el lado del pentágono
+     * */
     public double getPentagonSide(){
         double side;
         boolean isPentagonSideCorrect;
@@ -105,6 +132,11 @@ public class Data {
     }
 
     //Apotema del pentágono
+    /**Descripción de la función
+     * Pide a usuario ingresar la medida del apotema  del pentágono.
+     * Tiene una verificación para saber que el valor ingresado no puede ser 0 o menos
+     * @return apothem --> Es el valor que tomará el apotema del pentágono
+     * */
     public double getPentagonApothem(){
         double apothem;
         boolean isPentagonApothemCorrect;

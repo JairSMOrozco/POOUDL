@@ -7,6 +7,12 @@ public class Rent {
 
 
     //Metodos
+    /**Descripcion de la función
+     * A partir de un vehículo dado se llena un objeto(Vehicle) y usando sus propiedades se calcula el costo total de la renta
+     * @param defaultVehicle --> Objeto que tiene por métodos varias operaciones para cacular costo total de renta
+     * @param vehicle --> Vehiculo elegido por usuario en formato int
+     * @return rentalCost --> Es el costo total de renta por vehiculo seleccionado
+     * */
     public String totalRentalCost(Vehicle defaultVehicle, int vehicle){
         selectedVehicle = vehicleAssign(vehicle);
 
@@ -31,6 +37,12 @@ public class Rent {
         return rentalCost;
     }
 
+
+    /**Descripcion de la funcion
+     * Cambia un int por un string para poder hacer la asignación de vehiculo y poder calcular el costo de la renta
+     * @param vehicle --> Es la opción de vehículo ingresada por usuario
+     * @return selectedVehicle --> Es el String con el valor del vehículo
+     * */
     private String vehicleAssign(int vehicle){
 
         String selectedVehicle = "";
