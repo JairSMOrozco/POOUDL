@@ -1,6 +1,5 @@
 public class Interests {
     //Atributos
-    private double[] interests = new double[2];
     private double interesDiario;
     private double interesTotal;
     private double capitalTotal;
@@ -51,6 +50,9 @@ public class Interests {
      * @return interests --> Array que contiene el monto a pagar por mes y el capital total resultante
      * */
     public double[] calculateInterests(double[] interestData){
+
+        double[] interests = new double[2];
+
         tasaInteresDiaria(interestData[1]);
         interesAcumulado(interestData[0], interesDiario, interestData[2]);
         capitalFinal(interestData[0], interesTotal);

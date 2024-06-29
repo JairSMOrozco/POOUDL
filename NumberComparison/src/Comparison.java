@@ -18,6 +18,7 @@ public class Comparison {
         //Array de números ya ordenado
         orderedNumbers = arrayNumbers;
 
+        //Array con los número ordenados de menor a mayor
         return orderedNumbers;
     }
 

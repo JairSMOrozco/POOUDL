@@ -10,12 +10,18 @@ public class Validate {
 
     //Métodos
 
+    /**Descripción de la función
+     * Ejecuta los métodos que evaluan el día, el mes y el año
+     * @param captureDate --> Array con los datos de usuario
+     * @return isDateCorrect --> Boolean para saber si los datos son válidos.
+     * */
     public boolean checkDate(int[] captureDate){
         checkDay(captureDate[0]);
         checkMonth(captureDate[1]);
         checkYear(captureDate[2]);
         checkDayMonth(captureDate[0], captureDate[1]);
 
+        //Valida dato por dato del array
         if(!isDayCorrect){
             System.out.println("El día no es válido");
         }else if (!isMonthCorrect){
@@ -28,9 +34,14 @@ public class Validate {
             isDateCorrect = true;
         }
 
+        //Regresa si los datos son todos correctos o no
         return isDateCorrect;
     }
 
+    /**Descripción de la función
+     * Valida si el día ingresado es correcto
+     * @param day --> Es el primer valor del array de datos ingresados por el usuario
+     * */
     private void checkDay(int day){
         if(day < 1 || day > 31){
             isDayCorrect = false;
@@ -39,6 +50,10 @@ public class Validate {
         }
     }
 
+    /**Descripción de la función
+     * Valida si el mes ingresado es correcto
+     * @param month --> Es el segundo valor del array de datos ingresados por el usuario
+     * */
     private void checkMonth(int month){
         if (month < 1 || month > 12){
             isMonthCorrect = false;
@@ -47,6 +62,10 @@ public class Validate {
         }
     }
 
+    /**Descripción de la función
+     * Valida si el año ingresado es correcto
+     * @param year --> Es el segundo valor del array de datos ingresados por el usuario
+     * */
     private void checkYear(int year){
         if (year < 1 || year > 3000){
             isYearCorrect = false;
@@ -55,6 +74,11 @@ public class Validate {
         }
     }
 
+    /**Descripción de la función
+     * Revisa la relación dia-mes para determinar si un mes tiene 29, 30 o 31 días
+     * @param day --> Es el valor ingresado por usuario en la posición 0 del array
+     * @param month --> Es el valor ingresado por usuario en la posición 1 del array
+     * */
     public void checkDayMonth(int day, int month){
 
         if (month == 2 && day > 29){

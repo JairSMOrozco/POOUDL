@@ -12,10 +12,13 @@ public class Seasons {
         PrintSeason print = new PrintSeason();
 
         do {
+            //Obtiene el día, mes y año
             date = captureDate.getDate();
 
+            //Valida si los datos ingresados son correctos
             isDateCorrect = validationDate.checkDate(date);
-        }while (isDateCorrect == false);
+
+        }while (!isDateCorrect);
 
 
         season = whatSeasonIs.setSeason(date);

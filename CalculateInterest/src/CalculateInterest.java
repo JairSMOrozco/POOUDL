@@ -1,5 +1,6 @@
 public class CalculateInterest {
     public static void main(String[] args) {
+        //Variables del método
         double[] interestData = new double[3];
         boolean isValidate = false;
         double[] interests = new double[2];
@@ -17,7 +18,7 @@ public class CalculateInterest {
             //Validación de datos
             isValidate = validation.validateData(interestData);
 
-        }while (isValidate == false);
+        }while (!isValidate);
 
         //Calculos según los datos proporcionados por usuario
         interests = calculateInterest.calculateInterests(interestData);

@@ -21,10 +21,12 @@ public class Tickets {
 
             isDataCorrect = dataVerification.dataVerification(state, tickets);
 
-        }while(isDataCorrect == false);
+        }while(!isDataCorrect);
 
+        //Costo total de boletos
         totalCost = calculateTravel.totalCost(state, tickets);
 
+        //Salida de resultado
         travelDetails.myTravelDetails(totalCost);
 
 

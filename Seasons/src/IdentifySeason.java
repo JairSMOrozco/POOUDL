@@ -3,6 +3,11 @@ public class IdentifySeason {
     private String season;
 
     //Métodos
+    /**Descripción de la función
+     * Evalua los datos día y mes y en base a ello asigna una estación del año
+     * @param captureData --> Array con los datos capturas por el usuario
+     * @return season --> Es la estación del año a la que corresponden los datos ingresados
+     * */
     public String setSeason(int[] captureData){
         int day = captureData[0];
         int month = captureData[1];
@@ -17,6 +22,7 @@ public class IdentifySeason {
             season = "Invierno";
         }
 
+        //Estación del año que cumple con los parámetros dados
         return season;
     }
 }

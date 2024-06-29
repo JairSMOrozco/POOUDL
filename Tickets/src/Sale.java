@@ -4,10 +4,17 @@ public class Sale {
     private String distanceAndPrice;
 
     //Métodos
+
+    /**Descripción de la función
+     * Según el estado elegido se manda el número de boletos y se hacen los calculos para sacar el total del viaje.
+     * @param state --> Es una letra (char) que dirá a que estado hay que mandar los boletos
+     * @param tickets --> Número de boletos para hacer los cálculos según los valores de cada estado
+     * @return distanceAndPrice --> Resultado de los cálculos hechos
+     * */
     public String totalCost(char state, int tickets){
         selectedState = stateAssign(state);
 
-        //Intancias de State
+        //Instancias de State
         State puebla = new State();
         State veracruz = new State();
         State tlaxcala = new State();
@@ -50,6 +57,11 @@ public class Sale {
         return distanceAndPrice;
     }
 
+    /**Descripción de la función
+     * En base a un char cambia a string y asigna un estado
+     * @param state --> Es el char que captura el usuario
+     * @return selectedState --> Contiene un String con el valor del estado elegido
+     * */
     private String stateAssign(char state){
 
         String selectedState = "";

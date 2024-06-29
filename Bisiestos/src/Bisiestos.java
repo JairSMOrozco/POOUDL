@@ -1,7 +1,7 @@
 public class Bisiestos {
 
     public static void main(String[] args) {
-
+        //Artributos
         int year;
         boolean yearValue;
 
@@ -23,6 +23,7 @@ public class Bisiestos {
             result.showResult(yearValue);
 
         }else{
+            //Si año es un dato inválido
             System.out.println("Error, dato fuera de rango");
         }
 
