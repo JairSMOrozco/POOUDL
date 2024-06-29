@@ -1,4 +1,5 @@
 public class Pound {
+    //Atributos
     double poundToKiloValue = 0.454;
 
     //Métodos

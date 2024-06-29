@@ -6,7 +6,7 @@ public class Determinacion {
      * @param year --> Es el año ingresado por el usuario
      * @return isBi --> Un boolean que indica si el año es bisisesto o no
      * */
-    public static boolean calculateBi(int year){
+    public boolean calculateBi(int year){
         int multi4, multi100, multi400;
         boolean isBi = false;
 

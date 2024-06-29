@@ -1,4 +1,3 @@
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Date {
@@ -6,6 +5,15 @@ public class Date {
     private int[] captureDate = new int[3];
 
     //Métodos
+    public int[] getDate(){
+        System.out.println("Programa para mostrar a que estación pertenece una fecha");
+        getDay();
+        getMonth();
+        getYear();
+
+        return captureDate;
+    }
+
     private void getDay(){
         Scanner readDay = new Scanner(System.in);
 
@@ -27,13 +35,4 @@ public class Date {
         captureDate[2] = readYear.nextInt();
     };
 
-
-    public int[] getDate(){
-        System.out.println("Programa para mostrar a que estación pertenece una fecha");
-        getDay();
-        getMonth();
-        getYear();
-
-        return captureDate;
-    };
 }

@@ -1,4 +1,5 @@
 public class Gallon {
+    //Atributos
     double gallonToLiterValue = 3.785;
 
     //Métodos

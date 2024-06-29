@@ -25,5 +25,4 @@ public class State {
     private void travelCost(int tickets){
         totalCost = ticketPrice * tickets;
     }
-
 }

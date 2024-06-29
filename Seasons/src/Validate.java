@@ -1,5 +1,3 @@
-import java.lang.runtime.SwitchBootstraps;
-
 public class Validate {
     //Atributos
     private boolean isDateCorrect = false;
@@ -79,7 +77,7 @@ public class Validate {
      * @param day --> Es el valor ingresado por usuario en la posición 0 del array
      * @param month --> Es el valor ingresado por usuario en la posición 1 del array
      * */
-    public void checkDayMonth(int day, int month){
+    private void checkDayMonth(int day, int month){
 
         if (month == 2 && day > 29){
             System.out.println("Febrero no puede tener más de 29 días");

@@ -39,5 +39,4 @@ public class Menu {
         return tickets;
     }
 
-
 }

@@ -1,4 +1,5 @@
 public class Mile {
+    //Atributos
     double mileToKilometerValue = 1.609;
 
     //Métodos

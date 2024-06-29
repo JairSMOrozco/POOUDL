@@ -69,9 +69,6 @@ public class UnitConversion {
                     System.out.println("Saliendo del programa...");
                     System.exit(0);
             }
-
-
         }
-
     }
 }

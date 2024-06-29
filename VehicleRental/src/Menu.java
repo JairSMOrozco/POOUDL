@@ -25,5 +25,4 @@ public class Menu {
         return vehicle;
     }
 
-
 }

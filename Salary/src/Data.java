@@ -6,6 +6,18 @@ public class Data {
     private double[] workData = new double[2];
 
     //Métodos
+    /**getWorkData ejecuta @getHours y @getFee
+     * @see #getHours()
+     * @see #getFee()
+     * @return workData --> Array con los datos capturados [horas, tarifa]
+     * */
+    public double[] getWorkData(){
+        getHours();
+        getFee();
+
+        return workData;
+    }
+
     /**
      * getHours pide a usuario ingrese las horas trabajadas y las alamacena en la primera posición
      * del array workData
@@ -28,15 +40,4 @@ public class Data {
         workData[1] = readFee.nextDouble();
     }
 
-    /**getWorkData ejecuta @getHours y @getFee
-     * @see #getHours()
-     * @see #getFee()
-     * @return workData --> Array con los datos capturados [horas, tarifa]
-     * */
-    public double[] getWorkData(){
-        getHours();
-        getFee();
-
-        return workData;
-    }
 }

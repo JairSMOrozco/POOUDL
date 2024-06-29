@@ -37,7 +37,6 @@ public class Rent {
         return rentalCost;
     }
 
-
     /**Descripcion de la funcion
      * Cambia un int por un string para poder hacer la asignación de vehiculo y poder calcular el costo de la renta
      * @param vehicle --> Es la opción de vehículo ingresada por usuario
@@ -59,6 +58,5 @@ public class Rent {
         return selectedVehicle;
 
     }
-
 
 }

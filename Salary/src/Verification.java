@@ -5,26 +5,6 @@ public class Verification {
     private boolean correctFee;
 
     //Métodos
-    /** Definición de la función: Verifica que las horas ingresadas sean mayores a 0
-     * @param hours --> Son las horas trabajadas*/
-    private void areHoursCorrect(double hours){
-        if (hours <= 0){
-            correctHours = false;
-        }else {
-            correctHours = true;
-        }
-    }
-
-    /** Definición de la función: Verifica que la tarifa ingresada que se paga por hora sea mayor a 0
-     * @param fee --> Es la tarifa que se paga por hora de trabajo*/
-    private void isFeeCorrect(double fee){
-        if (fee <= 0){
-            correctFee = false;
-        }else {
-            correctFee = true;
-        }
-    }
-
     /**Definición de la función: Ejecuta los métodos de verificación de hora(areHoursCorrect) y tarifa(isFeeCorrect) y determina si los datos son válidos
      * @param workData --> Es el array con los datos de horas trabajadas y tarifa de pago por hora
      * @see #areHoursCorrect(double)
@@ -46,4 +26,25 @@ public class Verification {
 
         return isDataCorrect;
     }
+
+    /** Definición de la función: Verifica que las horas ingresadas sean mayores a 0
+     * @param hours --> Son las horas trabajadas*/
+    private void areHoursCorrect(double hours){
+        if (hours <= 0){
+            correctHours = false;
+        }else {
+            correctHours = true;
+        }
+    }
+
+    /** Definición de la función: Verifica que la tarifa ingresada que se paga por hora sea mayor a 0
+     * @param fee --> Es la tarifa que se paga por hora de trabajo*/
+    private void isFeeCorrect(double fee){
+        if (fee <= 0){
+            correctFee = false;
+        }else {
+            correctFee = true;
+        }
+    }
+
 }

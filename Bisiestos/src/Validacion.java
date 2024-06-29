@@ -6,7 +6,7 @@ public class Validacion {
      * @param yearCapture --> Año ingresado por usuario
      * @return true || false --> Solo regresa un boolean que es recibido en el main
      * */
-    public static boolean validationData(int yearCapture){
+    public boolean validationData(int yearCapture){
         if(yearCapture > 0 && yearCapture < 3000){
             return true;
         }else {

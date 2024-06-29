@@ -4,6 +4,19 @@ public class CalculatorSalary {
     private double howManyExtraHours;
 
     //Métodos
+    /**Descripción de la función: Llama a los métodos responsables para calcular horas extra y salario total
+     * @param workData --> Son los datos ingresados por el usuario (horas trabajadas y tarifa de pago)
+     * @see #extraHours(double)
+     * @see #calculateSalary(double, double, double)
+     * @return salary --> Es la variable que contiene el salario final del colaborador
+     * */
+    public double pay(double[] workData){
+        extraHours(workData[0]);
+        calculateSalary(workData[0], workData[1], howManyExtraHours);
+
+        return salary;
+    }
+
     /** Descripción de la función: Recibe el total de horas trabajadas y le resta 40 para ver si hay horas extra
      * @param hours --> Son el total de horas trabajadas
      * */
@@ -30,16 +43,4 @@ public class CalculatorSalary {
         salary = total;
     }
 
-    /**Descripción de la función: Llama a los métodos responsables para calcular horas extra y salario total
-     * @param workData --> Son los datos ingresados por el usuario (horas trabajadas y tarifa de pago)
-     * @see #extraHours(double)
-     * @see #calculateSalary(double, double, double)
-     * @return salary --> Es la variable que contiene el salario final del colaborador
-     * */
-    public double pay(double[] workData){
-        extraHours(workData[0]);
-        calculateSalary(workData[0], workData[1], howManyExtraHours);
-
-        return salary;
-    }
 }
