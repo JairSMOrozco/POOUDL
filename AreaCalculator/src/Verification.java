@@ -1,4 +1,4 @@
-public class Verification {
+public class zVerification {
     //Métodos
     /**Descripción de la función
      * Verifica que la opción elegida por usuario sea válida y pueda seguir con el programa

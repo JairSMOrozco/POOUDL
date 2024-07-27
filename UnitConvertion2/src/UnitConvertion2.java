@@ -49,24 +49,25 @@ public class UnitConvertion2 {
         switch (selectedOption){
             case 1:
                 System.out.println("Ingrese 0 para colocar manualmente una cifra o 1 para usar un valor predeterminado");
-                if(scanner.nextDouble() == 0){
-                    System.out.println("Ingresa la cantidad de libras a convertir");
-                    capturedValue = scanner.nextDouble();
-                    convertion.convertToKilograms(capturedValue);
-                    double result = convertion.getKilogramsValue();
-                    System.out.println(capturedValue + " libras son iguales a " + result + " kilogramos");
-                }else{
-                    convertion.convertToKilograms();
-                    double result = convertion.getKilogramsValue();
-                    System.out.println("Una libra es igual a " + result + " kilogramos");
+                try{
+                    if(scanner.nextDouble() == 0){
+                        System.out.println("Ingresa la cantidad de libras a convertir");
+                        capturedValue = scanner.nextDouble();
+                        convertion.convertToKilograms(capturedValue);
+                        double result = convertion.getKilogramsValue();
+                        System.out.println(capturedValue + " libras son iguales a " + result + " kilogramos");
+                    }else{
+                        convertion.convertToKilograms();
+                        double result = convertion.getKilogramsValue();
+                        System.out.println("Una libra es igual a " + result + " kilogramos");
+                    }
+                }catch(InputMismatchException e){
+                    System.out.println("Opción inválida");
                 }
+
                 break;
             case 2:
-                /*
-                milesCaptured = captureData.getMiles();
-                milesToKilometers = mile.convertToKilometers(milesCaptured);
-                result.showResultConversion(selectedOption, milesCaptured, milesToKilometers);
-                */
+
                 break;
 
             case 3:
