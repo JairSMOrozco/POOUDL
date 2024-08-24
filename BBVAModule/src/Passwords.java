@@ -6,6 +6,8 @@ public class Passwords {
     private String password;
 
     //Métodos
+
+    //Genera la contraseña de manera aleatoria
     public void generatePassword(){
         int wordLength = 8;
         String characters = "ABCDEFGHIJKLMNOPQRSOTUVWXYZ1234567890";
@@ -19,11 +21,16 @@ public class Passwords {
             randomPassword.append(characters.charAt(randomIndex));
         }
 
-        this.password = randomPassword.toString();
+        //Almaceno el valor del string aleatorio en la propiedad password
+        setPassword(randomPassword.toString());
 
     }
 
+    //Getters
     public String getPassword(){
         return password;
     }
+
+    //Setters
+    public void setPassword(String pass){ this.password = pass; }
 }

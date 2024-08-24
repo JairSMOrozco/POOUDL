@@ -9,10 +9,10 @@ public class Usuarios {
     //Métodos
     Usuarios(){}
 
-    //Tengo que usar la clase Passwords aquí
+    //Creo una instancia de Passwords en Usuarios
     Passwords password = new Passwords();
 
-
+    //Método que crea usuario aleatorio y también la constraseña haciendo uso de la instancia de passwords
     public void generateUser(){
         int wordLength = 8;
         String letters = "ABCDEFGHIJKLMNOPQRSOTUVWXYZ";
@@ -26,19 +26,26 @@ public class Usuarios {
             randomUser.append(letters.charAt(randomIndex));
         }
 
-        this.user = randomUser.toString();
+        //Almaceno el valor del string aleatorio en la propiedad user
+        setUser(randomUser.toString());
 
+        //Método que crea la contraseña haciendo uso de la instancia de passwords
         password.generatePassword();
 
-        this.pass = password.getPassword();
+        //Almaceno el valor del string aleatorio en la propiedad pass
+        setPassword(password.getPassword());
 
     }
 
-    public String getUsuario(){
+    //Getters
+    public String getUser(){
         return user;
     }
-
     public String getPassword(){
         return pass;
     }
+
+    //Setters
+    public void setUser(String user) { this.user = user; }
+    public void setPassword(String password){ this.pass = password; }
 }
